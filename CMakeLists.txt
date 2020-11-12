@@ -1668,7 +1668,7 @@ else()
   # CMake search path wants either "share" (AKA GNUInstallDirs DATAROOTDIR) for arch-independent, or LIBDIR for arch-
   # dependent, plus "cmake" as prefix
   set(ZEROMQ_CMAKECONFIG_INSTALL_DIR
-      "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
+      "share/cmake/${PROJECT_NAME}"
       CACHE STRING "install path for ZeroMQConfig.cmake")
 endif()
 
